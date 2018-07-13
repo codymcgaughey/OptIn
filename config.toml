@@ -1,0 +1,20 @@
+baseurl = ""
+title = ""
+subtitle = ""
+languageCode = "en-us"
+defaultContentLanguage = "en"
+enableRobotsTXT = true
+canonifyURLs = true
+disableKinds=["RSS"]
+googleAnalytics = "101650119"
+
+
+[params]
+  description = ''
+  copyright = ""
+
+
+[languages]
+[languages.en]
+languageName = "English"
+weight = 1

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+  <form name="Foreo" action="index.html" method="POST" netlify-honeypot="bot-field" netlify>
+
+    <!-- <div class="col-auto">
+      <input type="text" name="first" required placeholder="FIRST NAME"
+        style="max-width:49%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">
+      <input type="text" name="last" required placeholder="LAST NAME"
+        style="max-width:49%; float:right; margin: 10px auto 10px auto; text-align:center;">
+    </div>
+
+
+
+    <div class="col-auto">
+      <input type="text" name="phone" required placeholder="TELEPHONE"
+        style="max-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">
+    </div> -->
+
+    <div class="col-auto">
+      <label>
+        <input type="checkbox" value="1">
+        <!-- <img src="http://placehold.it/150x150"> -->
+        <img src="/images/burrito.jpg">
+        <p>Carne Asada Burrito</p>
+      </label>
+      <label>
+        <input type="checkbox" value="2">
+        <img src="/images/taco.jpg">
+        <p>Carnitas Tacos</p>
+      </label>
+      <label>
+        <input type="checkbox" value="3">
+
+        <img src="/images/bowl.jpg" alt="">
+        <p>Rice & Veggie Bowl</p>
+      </label>
+    </div>
+
+
+
+
+
+    <button type="submit" class="btn btn-primary btn-block"
+      style="min-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">Submit</button>
+
+  </form>
+
+  <style>
+    label input {
+      display: none;
+    }
+
+    label img {
+      border: 2px solid transparent;
+      padding: -10;
+      transition: 0.3s;
+    }
+
+    label input:checked+img {
+      opacity: .7;
+      border: 2px solid #00A5DF;
+      transition: 0.3s;
+    }
+
+  </style>

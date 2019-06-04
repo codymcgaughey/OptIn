@@ -1,53 +1,66 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title>Opt: powered by techlook.io</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="utf-8">
+  <title>Opt: powered by techlook.io</title>
+
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+
+  <!-- UIkit JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+
+</head>
+
+<body>
+
+</body>
+
 </html>
 
 {{ partial "header.html" . }}
 
-    <!-- Wrapper -->
-      <div id="wrapper">
+<!-- Wrapper -->
+<div id="wrapper">
 
-        <!-- Header -->
-          <header id="header">
-            <div class="content">
-              <div class="inner">
-                <h1>{{ .Site.Title | safeHTML }}</h1>
-                <p>{{ .Site.Params.description | safeHTML }}</p>
-              </div>
-            </div>
-            <nav>
-              <ul>
-                {{ range where .Data.Pages "Section" "software"}}
-                  <li>{{ if isset .Params "link" }}<a href="{{ index .Params "link" }}"{{else}}<a href="#{{ .File.TranslationBaseName }}"{{end}}>{{ if .GetParam "menuname" }}{{ .GetParam "menuname" }}{{ else }}{{ .Title }}{{ end }}</a></li>
-                {{ end }}
-              </ul>
-            </nav>
-            <div class="webinquiry">
-              <a href="#contact"><button>PLACE ORDER</button></a>
-            </div>
-          </header>
+  <!-- Header -->
+  <header id="header">
+    <div class="content">
+      <div class="inner">
+        <h1>{{ .Site.Title | safeHTML }}</h1>
+        <p>{{ .Site.Params.description | safeHTML }}</p>
+      </div>
+    </div>
+    <nav>
+      <ul>
+        {{ range where .Data.Pages "Section" "software"}}
+        <li>{{ if isset .Params "link" }}<a href="{{ index .Params "link" }}" {{else}}<a
+            href="#{{ .File.TranslationBaseName }}"
+            {{end}}>{{ if .GetParam "menuname" }}{{ .GetParam "menuname" }}{{ else }}{{ .Title }}{{ end }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+    <div class="webinquiry">
+      <a href="#contact"><button>PLACE ORDER</button></a>
+    </div>
+  </header>
 
-        <!-- Main -->
-          <div id="main">
-            {{ range .Data.Pages }}
-              {{ .Render "onepagestyle" }}
-            {{ end }}
-          </div>
+  <!-- Main -->
+  <div id="main">
+    {{ range .Data.Pages }}
+    {{ .Render "onepagestyle" }}
+    {{ end }}
+  </div>
 
-        <!-- Multilanguage -->
-          <div id="languages">
-            {{ if .IsTranslated }}
-              {{ range $i, $e := .Translations }}
-                {{ if $i }}, {{ end }}<a href="{{ .Permalink }}">{{ $e.Language.LanguageName }}</a>
-              {{ end}}
-            {{ end }}
-          </div>
+  <!-- Multilanguage -->
+  <div id="languages">
+    {{ if .IsTranslated }}
+    {{ range $i, $e := .Translations }}
+    {{ if $i }}, {{ end }}<a href="{{ .Permalink }}">{{ $e.Language.LanguageName }}</a>
+    {{ end}}
+    {{ end }}
+  </div>
 
-{{ partial "footer.html" . }}
+  {{ partial "footer.html" . }}

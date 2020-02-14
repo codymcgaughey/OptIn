@@ -125,7 +125,7 @@ blockquote:before,
 blockquote:after,
 q:before,
 q:after {
-  content: '';
+  content: "";
   content: none;
 }
 
@@ -153,7 +153,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-
   html,
   body {
     min-width: 320px;
@@ -220,10 +219,14 @@ tooltiptext {
 }
 
 a {
-  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out, border-bottom-color 0.2s ease-in-out;
+  -moz-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out,
+    border-bottom-color 0.2s ease-in-out;
   border-bottom: 1px rgba(255, 255, 255, 0.5);
   text-decoration: none;
   color: inherit;
@@ -407,7 +410,7 @@ form .field.half.first {
   padding: 0 0.75rem 0 0;
 }
 
-form>.actions {
+form > .actions {
   margin: 1.875rem 0 0 0 !important;
 }
 
@@ -424,7 +427,7 @@ form>.actions {
     padding: 0 0.5625rem 0 0;
   }
 
-  form>.actions {
+  form > .actions {
     margin: 1.5rem 0 0 0 !important;
   }
 }
@@ -462,10 +465,14 @@ textarea {
   -webkit-appearance: none;
   -ms-appearance: none;
   appearance: none;
-  -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
   background: transparent;
   border-radius: 4px;
   border: solid 1px #ffffff;
@@ -519,7 +526,7 @@ select option {
 
 .select-wrapper:before {
   color: #ffffff;
-  content: '\f107';
+  content: "\f107";
   display: block;
   height: 2.75rem;
   line-height: calc(2.75rem + 0em);
@@ -548,7 +555,6 @@ textarea {
 
 input[type="checkbox"],
 input[type="radio"] {
-
   display: block;
   float: left;
   margin-right: -2rem;
@@ -557,9 +563,8 @@ input[type="radio"] {
   z-index: -1;
 }
 
-input[type="checkbox"]+label,
-input[type="radio"]+label {
-
+input[type="checkbox"] + label,
+input[type="radio"] + label {
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
@@ -571,8 +576,8 @@ input[type="radio"]+label {
   position: relative;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: FontAwesome;
@@ -581,15 +586,19 @@ input[type="radio"]+label:before {
   text-transform: none !important;
 }
 
-input[type="checkbox"]+label:before,
-input[type="radio"]+label:before {
-  -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
-  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+input[type="checkbox"] + label:before,
+input[type="radio"] + label:before {
+  -moz-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  -webkit-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  -ms-transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
+  transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out,
+    background-color 0.2s ease-in-out;
   border-radius: 4px;
   border: solid 1px #ffffff;
-  content: '';
+  content: "";
   display: inline-block;
   height: 1.65rem;
   left: 0;
@@ -600,52 +609,52 @@ input[type="radio"]+label:before {
   width: 1.65rem;
 }
 
-input[type="checkbox"]:checked+label:before,
-input[type="radio"]:checked+label:before {
+input[type="checkbox"]:checked + label:before,
+input[type="radio"]:checked + label:before {
   background: #ffffff !important;
   border-color: #ffffff !important;
   color: #1b1f22;
-  content: '\f00c';
+  content: "\f00c";
 }
 
-input[type="checkbox"]:focus+label:before,
-input[type="radio"]:focus+label:before {
+input[type="checkbox"]:focus + label:before,
+input[type="radio"]:focus + label:before {
   background: rgba(255, 255, 255, 0.075);
   border-color: #ffffff;
   box-shadow: 0 0 0 1px #ffffff;
 }
 
-input[type="checkbox"]+label:before {
+input[type="checkbox"] + label:before {
   border-radius: 4px;
 }
 
-input[type="radio"]+label:before {
+input[type="radio"] + label:before {
   border-radius: 100%;
 }
 
 ::-webkit-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 ::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 :-ms-input-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 .formerize-placeholder {
   color: rgba(255, 255, 255, 0.5) !important;
-  opacity: 1.0;
+  opacity: 1;
 }
 
 /* Box */
@@ -656,9 +665,9 @@ input[type="radio"]+label:before {
   padding: 1.5em;
 }
 
-.box> :last-child,
-.box> :last-child> :last-child,
-.box> :last-child> :last-child> :last-child {
+.box > :last-child,
+.box > :last-child > :last-child,
+.box > :last-child > :last-child > :last-child {
   margin-bottom: 0;
 }
 
@@ -684,7 +693,7 @@ input[type="radio"]+label:before {
   text-transform: none !important;
 }
 
-.icon>.label {
+.icon > .label {
   display: none;
 }
 
@@ -704,7 +713,7 @@ input[type="radio"]+label:before {
   background-image: url("/images/overlay.png");
   background-color: rgba(19, 21, 25, 0.5);
   border-radius: 4px;
-  content: '';
+  content: "";
   display: block;
   height: 100%;
   left: 0;
@@ -871,7 +880,7 @@ ul.actions.vertical li:first-child {
   padding-top: 0;
 }
 
-ul.actions.vertical li>* {
+ul.actions.vertical li > * {
   margin-bottom: 0;
 }
 
@@ -896,7 +905,7 @@ ul.actions.fit li {
   padding: 0 0 0 1rem;
 }
 
-ul.actions.fit li>* {
+ul.actions.fit li > * {
   margin-bottom: 0;
 }
 
@@ -925,12 +934,12 @@ ul.actions.fit.small li {
     padding-top: 0;
   }
 
-  ul.actions li>* {
+  ul.actions li > * {
     width: 100%;
     margin: 0 !important;
   }
 
-  ul.actions li>*.icon:before {
+  ul.actions li > *.icon:before {
     margin-left: -2em;
   }
 
@@ -1051,7 +1060,7 @@ button,
   letter-spacing: 0.2rem;
   line-height: 2.75rem;
   outline: 0;
-  padding: 0 2.0rem 0 2.0rem;
+  padding: 0 2rem 0 2rem;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
@@ -1129,10 +1138,10 @@ button {
 
 /* BG */
 #bg {
-  -moz-transform: scale(1.0);
-  -webkit-transform: scale(1.0);
-  -ms-transform: scale(1.0);
-  transform: scale(1.0);
+  -moz-transform: scale(1);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   position: fixed;
@@ -1145,7 +1154,7 @@ button {
 
 #bg:before,
 #bg:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -1163,7 +1172,12 @@ button {
   -webkit-transition-delay: 0.75s;
   -ms-transition-delay: 0.75s;
   transition-delay: 0.75s;
-  background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("/images/overlay.png");
+  background-image: linear-gradient(
+      to top,
+      rgba(19, 21, 25, 0.5),
+      rgba(19, 21, 25, 0.5)
+    ),
+    url("/images/overlay.png");
   background-size: auto, 256px 256px;
   background-position: center, center;
   background-repeat: no-repeat, repeat;
@@ -1175,11 +1189,14 @@ button {
   -webkit-transform: scale(1.125);
   -ms-transform: scale(1.125);
   transform: scale(1.125);
-  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out;
-  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out;
-  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out;
+  -moz-transition: -moz-transform 0.325s ease-in-out,
+    -moz-filter 0.325s ease-in-out;
+  -webkit-transition: -webkit-transform 0.325s ease-in-out,
+    -webkit-filter 0.325s ease-in-out;
+  -ms-transition: -ms-transform 0.325s ease-in-out,
+    -ms-filter 0.325s ease-in-out;
   transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out;
-  background-image: url("/images/ElevarWeb.png");
+  background-image: url("/images/FlamingoAppTabletBG.png");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1227,7 +1244,7 @@ body.is-loading #bg:before {
 }
 
 #wrapper:before {
-  content: '';
+  content: "";
   display: block;
 }
 
@@ -1263,19 +1280,26 @@ body.is-loading #bg:before {
   -webkit-align-items: center;
   -ms-align-items: center;
   align-items: center;
-  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  background-image: -moz-radial-gradient(rgba(0, 0, 0, 0.0) 25%, transparent 55%);
-  background-image: -webkit-radial-gradient(rgba(0, 0, 0, 0.0) 25%, transparent 55%);
-  background-image: -ms-radial-gradient(rgba(0, 0, 0, 0.0) 25%, transparent 55%);
-  background-image: radial-gradient(rgba(0, 0, 0, 0.0) 25%, transparent 55%);
+  -moz-transition: -moz-transform 0.325s ease-in-out,
+    -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -webkit-transition: -webkit-transform 0.325s ease-in-out,
+    -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -ms-transition: -ms-transform 0.325s ease-in-out,
+    -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out,
+    opacity 0.325s ease-in-out;
+  background-image: -moz-radial-gradient(rgba(0, 0, 0, 0) 25%, transparent 55%);
+  background-image: -webkit-radial-gradient(
+    rgba(0, 0, 0, 0) 25%,
+    transparent 55%
+  );
+  background-image: -ms-radial-gradient(rgba(0, 0, 0, 0) 25%, transparent 55%);
+  background-image: radial-gradient(rgba(0, 0, 0, 0) 25%, transparent 55%);
   max-width: 100%;
   text-align: center;
 }
 
-#header>* {
+#header > * {
   -moz-transition: opacity 0.325s ease-in-out;
   -webkit-transition: opacity 0.325s ease-in-out;
   -ms-transition: opacity 0.325s ease-in-out;
@@ -1284,8 +1308,8 @@ body.is-loading #bg:before {
   margin-top: 3.5rem;
 }
 
-#header>*:before {
-  content: '';
+#header > *:before {
+  content: "";
   display: block;
   position: absolute;
   top: calc(-3.5rem - 1px);
@@ -1295,11 +1319,11 @@ body.is-loading #bg:before {
   background: #ffffff;
 }
 
-#header> :first-child {
+#header > :first-child {
   margin-top: 0;
 }
 
-#header> :first-child:before {
+#header > :first-child:before {
   display: none;
 }
 
@@ -1316,7 +1340,6 @@ body.is-loading #bg:before {
 }
 
 #header .content {
-
   border-color: #ffffff;
   border-top-width: 1px;
   border-bottom-width: 1px;
@@ -1324,10 +1347,14 @@ body.is-loading #bg:before {
 }
 
 #header .content .inner {
-  -moz-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-  -webkit-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-  -ms-transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
-  transition: max-height 0.75s ease, padding 0.75s ease, opacity 0.325s ease-in-out;
+  -moz-transition: max-height 0.75s ease, padding 0.75s ease,
+    opacity 0.325s ease-in-out;
+  -webkit-transition: max-height 0.75s ease, padding 0.75s ease,
+    opacity 0.325s ease-in-out;
+  -ms-transition: max-height 0.75s ease, padding 0.75s ease,
+    opacity 0.325s ease-in-out;
+  transition: max-height 0.75s ease, padding 0.75s ease,
+    opacity 0.325s ease-in-out;
   -moz-transition-delay: 0.25s;
   -webkit-transition-delay: 0.25s;
   -ms-transition-delay: 0.25s;
@@ -1337,7 +1364,7 @@ body.is-loading #bg:before {
   overflow: hidden;
 }
 
-#header .content .inner> :last-child {
+#header .content .inner > :last-child {
   margin-bottom: 0;
 }
 
@@ -1390,7 +1417,7 @@ body.is-loading #bg:before {
 }
 
 #header nav.use-middle:after {
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0;
@@ -1423,7 +1450,7 @@ body.is-loading #header {
   filter: blur(0.125rem);
 }
 
-body.is-loading #header>* {
+body.is-loading #header > * {
   opacity: 0;
 }
 
@@ -1441,11 +1468,11 @@ body.is-loading #header .content .inner {
 }
 
 @media screen and (max-width: 736px) {
-  #header>* {
+  #header > * {
     margin-top: 2rem;
   }
 
-  #header>*:before {
+  #header > *:before {
     top: calc(-2rem - 1px);
     height: calc(2rem + 1px);
   }
@@ -1545,7 +1572,8 @@ body.is-loading #header .content .inner {
   -ms-transform: translateY(0.25rem);
   transform: translateY(0.25rem);
   -moz-transition: opacity 0.325s ease-in-out, -moz-transform 0.325s ease-in-out;
-  -webkit-transition: opacity 0.325s ease-in-out, -webkit-transform 0.325s ease-in-out;
+  -webkit-transition: opacity 0.325s ease-in-out,
+    -webkit-transform 0.325s ease-in-out;
   -ms-transition: opacity 0.325s ease-in-out, -ms-transform 0.325s ease-in-out;
   transition: opacity 0.325s ease-in-out, transform 0.325s ease-in-out;
   padding: 2rem 2.5rem 1.5rem 2.5rem;
@@ -1583,7 +1611,7 @@ body.is-loading #header .content .inner {
   -webkit-transition: background-color 0.2s ease-in-out;
   -ms-transition: background-color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
-  content: '';
+  content: "";
   display: block;
   position: absolute;
   top: 0.75rem;
@@ -1656,10 +1684,14 @@ body.is-loading #header .content .inner {
 
 /* Footer */
 #footer {
-  -moz-transition: -moz-transform 0.325s ease-in-out, -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  -webkit-transition: -webkit-transform 0.325s ease-in-out, -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  -ms-transition: -ms-transform 0.325s ease-in-out, -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
-  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -moz-transition: -moz-transform 0.325s ease-in-out,
+    -moz-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -webkit-transition: -webkit-transform 0.325s ease-in-out,
+    -webkit-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  -ms-transition: -ms-transform 0.325s ease-in-out,
+    -ms-filter 0.325s ease-in-out, opacity 0.325s ease-in-out;
+  transition: transform 0.325s ease-in-out, filter 0.325s ease-in-out,
+    opacity 0.325s ease-in-out;
   width: 100%;
   max-width: 100%;
   margin-top: 2rem;

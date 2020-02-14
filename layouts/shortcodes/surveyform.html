@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html>
+<link rel="stylesheet" href="/css/slider.css" />
+
 
 <body>
 
@@ -7,23 +9,27 @@
     <!-- <div class="col-auto">
     <input type="text" name="company" required placeholder="COMPANY NAME" style="max-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">
   </div> -->
-    <div class="col-auto">
+    <!-- <div class="col-auto">
       <input type="text" name="first" required placeholder="FIRST NAME"
         style="max-width:49%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">
       <input type="text" name="last" required placeholder="LAST NAME"
         style="max-width:49%; float:right; margin: 10px auto 10px auto; text-align:center;">
-    </div>
-
+    </div> -->
+    <!-- 
     <div class="col-auto">
       <input type="email" name="email" required placeholder="EMAIL"
         style="max-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">
-    </div>
+    </div> -->
 
-    <div class="col-auto">
+    <!-- <div class="col-auto">
       <input type="text" name="company" required placeholder="COMPANY"
         style="max-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">
-    </div>
+    </div> -->
 
+    <div class="col-auto">
+      <div class="value">0</div>
+      <input type="range" name="numberOfEvents" min="0" max="500" step="25" value="0">
+    </div>
 
     <!-- <div class="col-auto">
       <input type="text" name="phone" required placeholder="TELEPHONE"
@@ -77,12 +83,26 @@
     </div>
 
 
-    <!-- <button type="submit" class="btn btn-primary btn-block"
-      style="min-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">Submit</button> -->
+    <button type="submit" class="btn btn-primary btn-block"
+      style="min-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;">Submit</button>
 
 
 
     <!-- <a href="#foodform"><button>PLACE ORDER</button></a> -->
   </form>
-  <a href="#survey1"> <button class="btn btn-primary btn-block" style="min-width:100%; float:left; margin: 10px auto 10px auto; text-align:center;
-      font-style:uppercase;">Continue</button> </a>
+  <!-- <a href="#food"> <button class="btn btn-primary btn-block" style="min-width:100%; float:left; margin: 10px auto 10px auto; text-align:center;
+      font-style:uppercase;">Continue</button> </a> -->
+
+
+  <script>
+    var elem = document.querySelector('input[type="range"]');
+
+    var rangeValue = function () {
+      var newValue = elem.value;
+      var target = document.querySelector('.value');
+      target.innerHTML = newValue;
+    }
+
+    elem.addEventListener("input", rangeValue);
+
+  </script>

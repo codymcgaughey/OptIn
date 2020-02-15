@@ -3,6 +3,9 @@
 <link rel="stylesheet" href="/css/slider.css" />
 <link rel="stylesheet" href="/css/multistep.css" />
 
+
+<!-- Move modal higher so it's not in the way of keyboard  -->
+
 <body>
 
   <form id="regForm" name="FlamingoApp" action="index.html" method="POST" netlify-honeypot="bot-field" netlify>
@@ -121,10 +124,24 @@
       </div>
     </div>
 
+    <!-- GDPR -->
+    <div class="col-auto">
+      <div class="tab">
+        <h1>We care about your privacy!</h1>
+        <div class="form-check" style="float:left; margin:10px 15px 15px 15px; text-align:center; min-width:30px;">
+          <input type="checkbox" name="emaillist" value="agree" required class="form-check-input" id="GDPR1">
+          <label class="form-check-label" for="GDPR1">I agree to recieve registration information and other
+            emails about
+            future updates about Flamingo Software using my provided email address.</label>
+        </div>
+      </div>
+    </div>
+
 
 
     <!-- Circles which indicates the steps of the form: -->
     <div style="text-align:center;margin-top:40px;">
+      <span class="step"></span>
       <span class="step"></span>
       <span class="step"></span>
       <span class="step"></span>

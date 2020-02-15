@@ -17,9 +17,10 @@
 } */
 
 /* Mark input boxes that gets an error on validation: */
-/* input.invalid {
-  background-color: #ffdddd;
-} */
+input.invalid {
+  /* background-color: #ffdddd; */
+  border-color: red;
+}
 
 /* Hide all steps by default: */
 .tab {

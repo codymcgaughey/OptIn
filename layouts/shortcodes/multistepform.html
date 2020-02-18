@@ -30,9 +30,11 @@
           oninput="this.className = ''">
 
         <div class="col-auto">
-          <input type="email" name="email" required placeholder="EMAIL"
+          <input type="email" name="email" id="email"
+            pattern="/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/" required
+            placeholder="EMAIL"
             style="max-width:100%; float:left; margin: 10px auto 10px auto; text-align:center; font-style:uppercase;"
-            oninput="this.className = ''">
+            oninput="this.className = ''" onblur="ValidateEmail()">
         </div>
 
         <div class="col-auto">
@@ -131,8 +133,8 @@
       <div class="tab">
         <h1>We care about your privacy!</h1>
         <div class="form-check" style="float:left; margin:10px 15px 15px 15px; text-align:center; min-width:30px;">
-          <input type="checkbox" name="emaillist" value="agree" required class="form-check-input" id="GDPR1">
-          <label class="form-check-label" for="GDPR1">I agree to recieve registration information and other
+          <input type="checkbox" name="emaillist" value="agree" required class="form-check-input" id="GDPR1" required>
+          <label class="form-check-label" for="GDPR1">I agree to receive registration information and other
             emails about
             future updates about Flamingo Software using my provided email address.</label>
         </div>

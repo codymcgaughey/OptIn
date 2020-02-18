@@ -1,5 +1,23 @@
 var currentTab = 0; // Current tab is set to be the first tab (0)
 showTab(currentTab); // Display the current tab
+document.getElementById("nextBtn").style.display = "none";
+
+//  Email validation
+function ValidateEmail(inputText) {
+  var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+
+  var email = document.getElementById("email");
+  if (email.value.match(mailformat)) {
+    email.style.borderColor = ""
+    document.getElementById("nextBtn").style.display = "inline";
+    return true;
+  } else {
+
+    email.style.borderColor = "red"
+    return false;
+  }
+}
+
 
 function showTab(n) {
   // This function will display the specified tab of the form ...
